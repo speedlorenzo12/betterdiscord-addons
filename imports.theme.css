@@ -1,0 +1,50 @@
+/**
+ * @name importi
+ * @author speedlorenzo12
+ * @version 1.0.0
+ * @description Changes ALL text to have a custom font, regardless of the element.
+ * @website https://discord.com/channels/86004744966914048/836694789898109009
+*/
+
+/*betterdiscord openasar cumcord :( goosemod :(*/
+/*mini plugin themes*/@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+/*https://discord.com/channels/86004744966914048/836694789898109009/957847155383619694
+/*Boosted Favorites*/@import url("https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css");
+/*https://discord.com/channels/86004744966914048/836694789898109009/991895119164870757
+/*inbox*/@import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
+/*https://discord.com/channels/86004744966914048/836694789898109009/978838048362074162
+/*dark server modal*/@import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);
+/*https://discord.com/channels/86004744966914048/836694789898109009/1126245643510366380
+/*dark or light mod*/@import url("https://saltssaumure.github.io/misc-discord-themes/snippets/LightDarkModeIndicator.css");
+/*https://discord.com/channels/86004744966914048/836694789898109009/964326867719028757
+/*Better Editor*/@import url("https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css");
+/*https://discord.com/channels/86004744966914048/836694789898109009/1105521095869739100*/
+/*account details grid*/@import url(https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+/*https://discord.com/channels/86004744966914048/836694789898109009/1110183975995048028*/
+/*made by*/@import url(https://blade04208.github.io/css/SignIt/settings.css); /* bottom of settings */
+/*https://discord.com/channels/1015060230222131221/1028106818368589824/1115248521453502474*/
+/*plug e themes counter*/@import url("https://raw.githack.com/Skamt/BDAddons/main/CSS/AddonsCounter.css");
+/*https://discord.com/channels/86004744966914048/836694789898109009/1118497462492086282*/
+/*roba degli importi*/
+
+
+/*mini plugin themes*/
+/*more grides*/.bd-addon-list,.list-QuW8QR{grid-template-columns:repeat(auto-fill, minmax(222px, 1fr ))!important;}.bd-addon-card{max-width: 274px;min-width: 1px;}
+/*repos*/[tab="Themes"]>.list-QuW8QR,[tab="Plugins"]>.list-QuW8QR{grid-template-columns:repeat(auto-fill, minmax(202px, 1fr ))!important;}[tab="Plugins"],[tab="Themes"]{width: 1400px;}
+
+/*Boosted Favorites*/:root{--favorites-name: 'My Favorites';--favorites-guild-icon: url(//i.imgur.com/OFCbYk0.png);--favorites-banner: url(https://i.imgur.com/jtcxsU6.png);}
+
+/*dark or light mod*/
+.theme-dark .titleBar-1it3bQ::after{color:white;}
+.theme-amoled .titleBar-1it3bQ::after{content: "Amoled mode";color:white;}
+
+/*better editor*/
+/*all sections giant css and detached*/#bd-customcss-editor{min-height: 900px!important;}.contentColumn-1C7as6.contentColumnDefault-3eyv5o{max-width:1155px!important;min-width:auto!important;}
+/*fixer settings*/.sidebar-nqHbhN{width: 450px!important;}
+
+/*Better Floating Editor*/.controls-section.controls-right>.checkbox-item>.checkbox-label.label-JWQiNe.da-label{ font-size:0;}
+
+/*made by*/:root {
+    --sign-text:'Made by speedlorenzo12'; 
+    --sign-color: var(--text-muted);
+}
