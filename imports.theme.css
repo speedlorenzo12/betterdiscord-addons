@@ -1,69 +1,45 @@
-/**
- * @name importi
- * @author speedlorenzo12
- * @version 1.0.0
- * @description Changes ALL text to have a custom font, regardless of the element.
- * @website https://discord.com/channels/86004744966914048/836694789898109009
-*/
-
 /*betterdiscord openasar cumcord :( goosemod :(*/
-/*mini plugin themes*/@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);/*
-https://discord.com/channels/86004744966914048/836694789898109009/957847155383619694
-/*Boosted Favorites*/@import url("https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css");/*
-https://discord.com/channels/86004744966914048/836694789898109009/991895119164870757
-/*inbox*/@import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
-/*snippet temp fix*/@import url(https://ShadowDevilsAvenged.github.io/SnippetsHere/BearableInboxTempFix.css);/*
-https://discord.com/channels/86004744966914048/836694789898109009/978838048362074162
-/*dark server modal*/@import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);/*
-https://discord.com/channels/86004744966914048/836694789898109009/1126245643510366380
-/*dark or light mod*/@import url("https://saltssaumure.github.io/misc-discord-themes/snippets/LightDarkModeIndicator.css");/*
-https://discord.com/channels/86004744966914048/836694789898109009/964326867719028757
-/*Better Editor*/@import url("https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css");/*
-https://discord.com/channels/86004744966914048/836694789898109009/1105521095869739100
-/*account details grid*/@import url(https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);/*
-https://discord.com/channels/86004744966914048/836694789898109009/1110183975995048028
-/*made by*/@import url(https://blade04208.github.io/css/SignIt/settings.css); /* bottom of settings *//*
-https://discord.com/channels/1015060230222131221/1028106818368589824/1115248521453502474
-/*plug e themes counter*/@import url("https://raw.githack.com/Skamt/BDAddons/main/CSS/AddonsCounter.css");/*
-https://discord.com/channels/86004744966914048/836694789898109009/1118497462492086282
+/*mini plugin themes*/@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+/*Boosted Favorites*/@import url("https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css");
+/*bearable inbox*/@import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
+/*https://github.com/maenDisease/BetterDiscordStuff/tree/main/css
+
+/*mini searchbar*/@import url("https://minidiscordthemes.github.io/Snippets/MinimalSearchbar/main.css");
+/*show original link*/@import url("https://minidiscordthemes.github.io/Snippets/ShowOriginalLink/main.css");
+/*split message bars*/@import url("https://minidiscordthemes.github.io/Snippets/SplitMessageBars/main.css");
+/*https://github.com/MiniDiscordThemes/Snippets/tree/main/themes/*/
+
+/*dark server modal*/@import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);
+/*Better Editor*/@import url("https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css");
+/*account details grid*/@import url(https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+/*Spotify Activity Redesign */@import url("https://dablulite.github.io/css-snippets/SpotifyActivityRedesign/import.css");
+/*https://github.com/DaBluLite/css-snippets
+
+/*visual refresh client theme*/@import url(`https://nspc911.github.io/vc-themes/VisualRefreshClientTheme.theme.css`);
+/*https://github.com/NSPC911/vc-themes
+
+/*discolored*/
+@import url("https://nyri4.github.io/Discolored/main.css");
+@import url('https://nyri4.github.io/donators/donators.css');
 /*roba degli importi*/
 
 /*mini plugin themes*/
-/*more grides*/*:where(#plugins-tab,#themes-tab)>[class*=bd]{grid-template-columns:repeat(auto-fill, minmax(202px, 1fr ))!important;}
-/*repos*/*:where(#themerepo-tab *,#pluginrepo-tab *)>.list_QuW8QR{grid-template-columns:repeat(auto-fill, minmax(222px, 1fr ))!important;}
+/*more grides*/*:where(#plugins-tab,#themes-tab) >.bd-addon-list.bd-grid-view:not(.bd-addon-store){grid-template-columns:repeat(auto-fill, minmax(202px, 1fr ))!important;}
+/*repos*/*:where(#plugins-tab,#themes-tab) *>.bd-addon-store{grid-template-columns:repeat(auto-fill, minmax(232px, 1fr ))!important;}
+/*pulsanti plugin*/.bd-addon-list .bd-controls>.bd-addon-button:not(.bd-button-color-red) svg{fill: #3e82e5;}
+/**/.bd-addon-list .bd-controls>.bd-addon-button:hover svg{fill:currentColor}
 
 /*Boosted Favorites*/:root{--favorites-name: 'My Favorites';--favorites-guild-icon: url(//i.imgur.com/OFCbYk0.png);--favorites-banner: url(https://i.imgur.com/jtcxsU6.png);}
 
-/*dark or light mod fixer*/
-[class*=titleBar]/*.titleBar-3AIemB*/::after {position: absolute;
-top: -4px;right: 84px;height: 18px;
-padding: 4px;line-height: 23px;font-size: 14px;
-letter-spacing: 0;background: var(--background-tertiary);
-color: var(--text-muted);font-family: var(--font-primary);}
-
-.theme-dark [class*=titleBar]/*.titleBar-3AIemB*/::after {content: "Dark mode";right: 135px;}
-.theme-light [class*=titleBar]/*.titleBar-3AIemB*/::after {content: "Light mode";}
-
-/*dark or light mod*/
-.theme-dark [class*=titleBar]/*.titleBar-3AIemB*/::after{color:white;}
-.theme-amoled [class*=titleBar]/*.titleBar-3AIemB*/::after{content: "Amoled mode";color:white;background-color: black;}
-
 /*better editor*/
-/*all sections giant css and detached*/#bd-customcss-editor{min-height: 820px!important;}.contentColumn_dc7d36{max-width: 100%;}
-/**/.sidebar__9e3e2,.sidebarRegionScroller__1fa7e,.sidebarRegion__60457{max-width: 450px;flex:1 0;}.sidebarRegion-1VBisG{flex: 0;}
+/*all sections giant css and detached*/#bd-customcss-editor{min-height: 820px!important;}.contentColumn__23e6b:not([id="voice-&-video-tab"]){max-width:100%;}
+/**/.sidebar__23e6b,.sidebarRegionScroller__23e6b,.sidebarRegion__23e6b{max-width:250px;flex:1 0;}.sidebarRegion_c25c6d{flex: 0.3;}
+/*fixer sidebar impostazioni*/.sidebar__23e6b{padding: 10px;}
+/*fix bd controls*/#bd-editor-controls *>[class*=bd-button] {background: var(--background-secondary-alt) !important;border-radius: 40px;}
 
-/*Better Floating Editor*/.controls-section.controls-right *>.checkbox-label.label-JWQiNe.da-label{ font-size:0;}
+/*Better Floating Editor*/.controls-section.controls-right *>.bd-text-normal.bd-text-14{ font-size:0;}
 
-#text-playground-tab>[class*=fullscreen]{width: 1550px;}
+/*giant floating editor*/.floating-window{min-height: 100px;}
 
-[aria-label="Impostazioni utente"]>[class*=info]::after{
-  content: var(--sign-text);
-  color: var(--sign-color);
-  font-size: 12px;
-  line-height: 16px;
-  display: block;
-}
-/*made by*/:root {
-    --sign-text:'Made by speedlorenzo12'; 
-    --sign-color: var(--text-muted);
-}
+/*ricerca migliorata*/[class*=toolbar] *>[class*=searchBar] *> [class*=icon]{top: 2px;right: 1px;position: absolute;left: unset;}
+[class*=toolbar] *>:where([class*=iconContainer],[class*=icon]:not([aria-label="Messaggi attaccati"]>*)){width: 18px;height: 18px;color: white;}
