@@ -21,25 +21,3 @@
 /*discolored*/
 @import url("https://nyri4.github.io/Discolored/main.css");
 @import url('https://nyri4.github.io/donators/donators.css');
-/*roba degli importi*/
-
-/*mini plugin themes*/
-/*more grides*/*:where(#plugins-tab,#themes-tab) >.bd-addon-list.bd-grid-view:not(.bd-addon-store){grid-template-columns:repeat(auto-fill, minmax(202px, 1fr ))!important;}
-/*repos*/*:where(#plugins-tab,#themes-tab) *>.bd-addon-store{grid-template-columns:repeat(auto-fill, minmax(232px, 1fr ))!important;}
-/*pulsanti plugin*/.bd-addon-list .bd-controls>.bd-addon-button:not(.bd-button-color-red) svg{fill: #3e82e5;}
-/**/.bd-addon-list .bd-controls>.bd-addon-button:hover svg{fill:currentColor}
-
-/*Boosted Favorites*/:root{--favorites-name: 'My Favorites';--favorites-guild-icon: url(//i.imgur.com/OFCbYk0.png);--favorites-banner: url(https://i.imgur.com/jtcxsU6.png);}
-
-/*better editor*/
-/*all sections giant css and detached*/#bd-customcss-editor{min-height: 820px!important;}.contentColumn__23e6b:not([id="voice-&-video-tab"]){max-width:100%;}
-/**/.sidebar__23e6b,.sidebarRegionScroller__23e6b,.sidebarRegion__23e6b{max-width:250px;flex:1 0;}.sidebarRegion_c25c6d{flex: 0.3;}
-/*fixer sidebar impostazioni*/.sidebar__23e6b{padding: 10px;}
-/*fix bd controls*/#bd-editor-controls *>[class*=bd-button] {background: var(--background-secondary-alt) !important;border-radius: 40px;}
-
-/*Better Floating Editor*/.controls-section.controls-right *>.bd-text-normal.bd-text-14{ font-size:0;}
-
-/*giant floating editor*/.floating-window{min-height: 100px;}
-
-/*ricerca migliorata*/[class*=toolbar] *>[class*=searchBar] *> [class*=icon]{top: 2px;right: 1px;position: absolute;left: unset;}
-[class*=toolbar] *>:where([class*=iconContainer],[class*=icon]:not([aria-label="Messaggi attaccati"]>*)){width: 18px;height: 18px;color: white;}
