@@ -1,4 +1,4 @@
-
+/* source https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1392907196848672920
 /*win buttons old*//*[class*=trailing]>[class*=winButtons]{gap: 0px!important;top: -5px!important;}
 [class*=trailing] *>[class*=winButtonClose]{color: red;width: 47px;}[class*=trailing] *>[class*=winButtonClose]:hover{background-color: red;color: var(--interactive-normal);}
 [class*=trailing] *>[class*=winButtonMinMax]+div:not([class*=Close]){color: yellow;width: 46px;}[class*=trailing] *>[class*=winButtonMinMax]+div:not([class*=Close]):hover{background-color: yellow;color: var(--interactive-normal);}
