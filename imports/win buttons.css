@@ -1,0 +1,111 @@
+
+/*win buttons old*//*[class*=trailing]>[class*=winButtons]{gap: 0px!important;top: -5px!important;}
+[class*=trailing] *>[class*=winButtonClose]{color: red;width: 47px;}[class*=trailing] *>[class*=winButtonClose]:hover{background-color: red;color: var(--interactive-normal);}
+[class*=trailing] *>[class*=winButtonMinMax]+div:not([class*=Close]){color: yellow;width: 46px;}[class*=trailing] *>[class*=winButtonMinMax]+div:not([class*=Close]):hover{background-color: yellow;color: var(--interactive-normal);}
+[class*=trailing] *>[class*=winButtonMinMax]:first-child{color: green;width: 46px;}[class*=trailing] *>[class*=winButtonMinMax]:first-child:hover{background-color: green;color: var(--interactive-normal);}
+*/
+
+[class*=trailing] *>[class*=winButtonClose]{width:47px;}
+[class*=trailing] *>[class*=winButtonMinMax]:where(:nth-child(1),:nth-child(2)){width:46px;}
+
+[class*=trailing]>[class*=winButtons]>[class*=winButton_] {
+    position: relative !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+[class*=trailing]>[class*=winButtons] {gap: 0 !important;display: flex !important;align-items: center !important;}
+
+[class*=trailing]>[class*=winButtons]>[class*=winButton_] svg {opacity: 0 !important;display: none !important;}
+
+:where([class*=trailing]>[class*=winButtons]>[class*=winButton_])::before {
+    content: "" !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: bold !important;
+    width: 14px !important;
+    height: 14px !important;
+    transition: color 0.3s ease, text-shadow 0.7s ease, transform 0.7s ease-in-out, filter 0.7s ease !important;
+    position: absolute !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+
+[class*=trailing] *>[class*=winButtonClose]::before {
+    content: "✖" !important;
+    color: #d83a42 !important; /* Red color */
+    top: 53% !important;
+    font-size: 20px !important;
+    left: 50% !important;
+    font-weight: normal !important; /* Fixed weight */
+    text-shadow: 0 0 3px #d83a42 !important; /* Light outline for stability */
+    will-change: transform !important; /* Optimization for animation */
+    transform: translate(-50%, -50%) !important;
+}
+
+[class*=trailing] *>[class*=winButtonClose]:hover::before {
+    color: #d83a42 !important; /* Brighter red on hover */
+    text-shadow: 
+    0 0 5px #ff3b44cc,
+    0 0 10px #ff3b4499,
+    0 0 15px #ff3b4480,
+    0 0 20px #ff3b4466,
+    0 0 25px #ff3b444d,
+    0 0 30px #ff3b4433 !important;
+    filter: brightness(1.1) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important; /* Rotation animation */
+}
+
+[class*=trailing] *>[class*=winButtonMinMax]:nth-child(1)::before {
+    content: "⚋" !important;
+    color: #23a55a !important; /* Green color */
+    top: 55% !important;
+    font-size: 20px !important;
+    left: 50% !important;
+    -webkit-text-stroke: 0.5px #23a55a !important; /* Fix outline */
+    text-rendering: geometricPrecision !important;
+    will-change: transform !important; /* Optimization for animation */
+    text-shadow: 0 0 3px #23a55a !important; /* Light outline for stability */
+}
+
+[class*=trailing] *>[class*=winButtonMinMax]:nth-child(1):hover::before {
+    color: #2ecc71 !important;
+    text-shadow: 
+        0 0 5px #2ecc71cc,
+        0 0 10px #2ecc7199,
+        0 0 15px #2ecc7180,
+        0 0 20px #2ecc7166,
+        0 0 25px #2ecc714d,
+        0 0 30px #2ecc7133 !important;
+    filter: brightness(1.2) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important;
+}
+
+[class*=trailing] *>[class*=winButtonMinMax]:nth-child(2)::before {
+    content: "⛶" !important;
+    color: #faa61a !important; /* Yellow color */
+    top: 55% !important;
+    font-size: 20px !important;
+    left: 50% !important;
+    -webkit-text-stroke: 0.5px #faa61a !important; /* Fix outline */
+    text-rendering: geometricPrecision !important;
+    will-change: transform !important; /* Optimization for animation */
+    text-shadow: 0 0 3px #faa61a !important; /* Light outline for stability */
+}
+
+[class*=trailing] *>[class*=winButtonMinMax]:nth-child(2):hover::before {
+    color: #faa61a !important;
+    text-shadow: 
+        0 0 5px #faa61a,
+        0 0 10px #b3760f,
+        0 0 15px #c98105,
+        0 0 20px #b17307,
+        0 0 25px #996606b6,
+        0 0 30px #9663059a !important;
+    filter: brightness(1.2) !important;
+    transform: translate(-50%, -50%) rotate(180deg) !important;
+}
