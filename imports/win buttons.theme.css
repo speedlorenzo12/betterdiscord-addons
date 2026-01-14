@@ -1,25 +1,10 @@
-/* source https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1392907196848672920
-/*win buttons old*//*[class*=trailing]>[class*=winButtons]{gap: 0px!important;top: -5px!important;}
-[class*=trailing] *>[class*=winButtonClose]{color: red;width: 47px;}[class*=trailing] *>[class*=winButtonClose]:hover{background-color: red;color: var(--interactive-normal);}
-[class*=trailing] *>[class*=winButtonMinMax]+div:not([class*=Close]){color: yellow;width: 46px;}[class*=trailing] *>[class*=winButtonMinMax]+div:not([class*=Close]):hover{background-color: yellow;color: var(--interactive-normal);}
-[class*=trailing] *>[class*=winButtonMinMax]:first-child{color: green;width: 46px;}[class*=trailing] *>[class*=winButtonMinMax]:first-child:hover{background-color: green;color: var(--interactive-normal);}
-*/
+/* source https://canary.discord.com/channels/1015060230222131221/1028106818368589824/1392907196848672920*/
 
 [class*=trailing] *>[class*=winButtonClose]{width:47px;}
 [class*=trailing] *>[class*=winButtonMinMax]:where(:nth-child(1),:nth-child(2)){width:46px;}
 
-[class*=trailing]>[class*=winButtons]>[class*=winButton_] {
-    position: relative !important;
-    background-color: transparent !important;
-    margin: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
 [class*=trailing]>[class*=winButtons] {gap: 0 !important;display: flex !important;align-items: center !important;}
-
-[class*=trailing]>[class*=winButtons]>[class*=winButton_] svg {opacity: 0 !important;display: none !important;}
+[class*=trailing]>[class*=winButtons] svg{display:none}
 
 :where([class*=trailing]>[class*=winButtons]>[class*=winButton_])::before {
     content: "" !important;
@@ -31,7 +16,7 @@
     height: 14px !important;
     transition: color 0.3s ease, text-shadow 0.7s ease, transform 0.7s ease-in-out, filter 0.7s ease !important;
     position: absolute !important;
-    transform: translate(-50%, -50%) !important;
+    transform: rotate(1.5turn) !important; /* Rotation animation */
 }
 
 
@@ -44,7 +29,6 @@
     font-weight: normal !important; /* Fixed weight */
     text-shadow: 0 0 3px #d83a42 !important; /* Light outline for stability */
     will-change: transform !important; /* Optimization for animation */
-    transform: translate(-50%, -50%) !important;
 }
 
 [class*=trailing] *>[class*=winButtonClose]:hover::before {
@@ -57,7 +41,8 @@
     0 0 25px #ff3b444d,
     0 0 30px #ff3b4433 !important;
     filter: brightness(1.1) !important;
-    transform: translate(-50%, -50%) rotate(180deg) !important; /* Rotation animation */
+    transform: rotate(1turn) !important; /* Rotation animation */
+    transition: color 0.3s ease, text-shadow 0.7s ease, transform 0.7s ease-in-out, filter 0.7s ease !important;
 }
 
 [class*=trailing] *>[class*=winButtonMinMax]:nth-child(1)::before {
@@ -82,7 +67,8 @@
         0 0 25px #2ecc714d,
         0 0 30px #2ecc7133 !important;
     filter: brightness(1.2) !important;
-    transform: translate(-50%, -50%) rotate(180deg) !important;
+    transform: rotate(1turn) !important; /* Rotation animation */
+    transition: color 0.3s ease, text-shadow 0.7s ease, transform 0.7s ease-in-out, filter 0.7s ease !important;
 }
 
 [class*=trailing] *>[class*=winButtonMinMax]:nth-child(2)::before {
@@ -107,5 +93,6 @@
         0 0 25px #996606b6,
         0 0 30px #9663059a !important;
     filter: brightness(1.2) !important;
-    transform: translate(-50%, -50%) rotate(180deg) !important;
+    transform: rotate(1turn) !important; /* Rotation animation */
+    transition: color 0.3s ease, text-shadow 0.7s ease, transform 0.7s ease-in-out, filter 0.7s ease !important;
 }
